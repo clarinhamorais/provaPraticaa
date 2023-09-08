@@ -1,0 +1,36 @@
+<nav>
+    <ul>
+      <a href="/views/home.handlebars">Livros</a>
+      <a href="/views/cadastro.handlebars">Cadastrar</a>
+    </ul>
+  </nav>
+
+  <div class="linha"></div>
+<h1>Cadastrar Livros</h1>
+{{#each}}
+<form action="/cadastro/livros" method="post">
+    <div class="form-types">
+        <label for="title">Título do livro:</label>
+        <input type="text" name="title" placeholder="Digite o nome do livro">
+    </div>
+    <div class="form-types">
+        <label for="category">Categoria do livro:</label>
+        <input type="text" name="category" placeholder="Digite a categoria do livro">
+    </div>
+    <div class="form-types">
+        <label for="description">Descrição do livro</label>
+        <input type="text" name="description" placeholder="Digite a descriçaõ do livro">
+    </div>
+    <div class="form-ult">
+        <label for="price">Preço do livro</label>
+        <input type="text" name="price" placeholder="R$50,00">
+    </div>
+    <div class="form-ult">
+        <label for="qnt_disponible">Quantidade disponível:</label>
+        <input type="text" name="qnt_disponible" placeholder="60">
+    </div>
+    <div class="form-btn">
+        <input type="submit" value="Cadastrar">
+    </div>
+</form>
+{{/each}}

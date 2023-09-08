@@ -1,0 +1,22 @@
+<nav>
+    <ul>
+      <a href="/views/home.handlebars">Livros</a>
+      <a href="/views/cadastro.handlebars">Cadastrar</a>
+    </ul>
+  </nav>
+
+  <div class="linha"></div>
+
+  <div>
+    <h1>{{this.title}}</h1>
+    <p>{{this.description}}</p>
+       
+       <div>
+        <p>{{this.category}}</p>
+
+        <p>Preço: {{this.price}}</p>
+        <p>Quantidade disponível: {{this.qnt_disponible}}</p>
+       </div>
+
+       <a href="/views/home.handlebars">Voltar</a>
+  </div>

@@ -1,0 +1,22 @@
+ <h1>Olá, mundo</h1>
+
+<nav>
+    <ul>
+      <a href="/views/home.handlebars">Livros</a>
+      <a href="/views/cadastro.handlebars">Cadastrar</a>
+    </ul>
+  </nav>
+
+{{#each}}
+  <div class="caixas">
+    <h2>{{title}}</h2>
+    <p>{{description}}</p>
+    <p>{{category}}</p> <p>{{price}}</p>
+
+    <div class="btn">
+        <input type="submit" value="Ver detalhes">
+        <input type="submit" value="Editar">
+        <input type="submit" value="Excluir">
+    </div>
+  </div>
+{{/each}}
